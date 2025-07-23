@@ -253,6 +253,7 @@ scikit-learn==1.2.2
 scipy==1.15.2
 semantic-version==2.10.0
 sentence-transformers==5.0.0
+setuptools>=42
 shellingham==1.5.4
 six==1.16.0
 smmap==5.0.2
@@ -312,6 +313,7 @@ wcwidth==0.2.13
 websocket-client==1.8.0
 websockets==12.0
 Werkzeug==3.0.6
+wheel
 wrapt==1.17.2
 xdis==6.1.4
 XlsxWriter==3.2.3
