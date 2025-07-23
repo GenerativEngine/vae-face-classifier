@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: face-recognition-api
+  labels:
+    app: face-recognition-api
+spec:
+  replicas: 2 # Start with 2 replicas for basic scalability
+  selector:
+    matchLabels:
+      app: face-recognition-api
+  template:
+    metadata:
+      labels:
+        app: face-recognition-api
+    spec:
+      containers:
+      - name: face-recognition-api
+        image: your-docker-username/face-recognition-api:latest 
+        ports:
+        - containerPort: 5000
+        resources:
+          requests:
+            memory: "512Mi" # Request 512MB of memory
+            cpu: "500m"   # Request 0.5 CPU core
+          limits:
+            memory: "1Gi"   # Limit to 1GB of memory
+            cpu: "1"      # Limit to 1 CPU core

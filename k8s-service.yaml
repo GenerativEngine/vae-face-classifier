@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: face-recognition-api-service
+spec:
+  selector:
+    app: face-recognition-api
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000
+  type: LoadBalancer # Use LoadBalancer for cloud environments, NodePort for local testing (e.g., Minikube)

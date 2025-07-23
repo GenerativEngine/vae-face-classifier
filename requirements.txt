@@ -1,0 +1,6 @@
+Flask==2.3.2
+tensorflow==2.10.0 # Or the specific version of Keras/TensorFlow you used for training
+scikit-learn==1.2.2
+numpy==1.23.5
+Pillow==9.5.0
+h5py==3.8.0 # Required for Keras model loading
